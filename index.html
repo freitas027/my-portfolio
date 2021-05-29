@@ -3,35 +3,52 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/toogle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     </head>
     <body class="theme">
         <div class="container">
-            <div class="left-sidebar">
+            <div class="left-sidebar m-1">
                 <nav>
-                    <a href="#" onclick="window.location.reload()">Main page</a>
-                    <a href="#">Work</a>
-                    <a href="#">Off time</a>
-                    <a id="btn-contact" href="#">Contact</a>
+                    <div class="flex-column">
+                        <a class="elevation-1 p-2 mb-1" href="#" onclick="window.location.reload()">Main page</a>
+                        <a class="elevation-1 p-2 mb-1" href="#">Work</a>
+                        <a class="elevation-1 p-2 mb-1" href="#">Off time</a>
+                        <a class="elevation-1 p-2 mb-1" id="btn-contact" href="#">Contact</a>
+                    </div>
+                    
                 </nav>
-                <div class="extra">
+                <div class="elevation-1">
 
-                    <div id="clock">
+                    <div id="clock" class="p-2">
                         Time
                     </div>
-                    <div id="theme-toogle">Picker</div>
+                    <div class="flex-row p-2" >
+                        <label class="toogle" id="theme-toogle">
+                            <input type="checkbox" id="checkbox">
+                            <span class="toogle-circle">
+                            </span>
+                        </label>
+                        <span class="ml-2" id="theme-msg">
+                            Night Mode Off
+                        </span>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="content">
+            <div class="content mt-1 mr-1">
                 <header>
                     <img class="header-img" src="https://cdn.pixabay.com/photo/2018/03/14/00/57/nature-3224129_960_720.jpg" alt="">
                 </header>
-                <div class="scroll-box mt-1 mb-1" data-simplebar>
+                <div class="scroll-box elevation-1 mt-1" data-simplebar>
 
                     <img class="profile-picture m-1" src="img/profile.jpg" alt="Professional profile picture">
-                    <p> <a href="#" target="_blank">Nec</a> tempus eget consectetur gravida leo felis inceptos hac magnis. Vel taciti sed venenatis ipsum venenatis cras. Aliquet quisque accumsan quisque integer nulla lectus nam? Eget penatibus curae; molestie vitae et id habitant tristique morbi! Porttitor dolor aenean, eros dis. Class nec inceptos venenatis lacinia aliquam praesent? Nunc porta consequat tortor lorem metus torquent hendrerit non praesent mollis nulla blandit. Eu sociis praesent facilisis. Adipiscing at consectetur dignissim aliquet phasellus tempus fusce a. Cubilia per malesuada odio quisque pellentesque. Platea, sagittis facilisi vel ad scelerisque cum facilisi tristique quam? Vivamus nullam, euismod interdum ultricies est eu facilisis. Natoque, varius sed sapien. Curae; nisl malesuada ultrices ante class magnis placerat. Torquent orci tristique taciti habitasse ac amet nunc magnis auctor himenaeos cum porta. Hac tempus quis integer. Magnis fames volutpat elit dictumst congue adipiscing dignissim suspendisse. Nisl aenean aenean condimentum viverra. Pharetra auctor tincidunt lectus nisl potenti conubia. Fames habitasse dui, fringilla sem convallis congue volutpat? Et cursus magna sed ultricies diam; scelerisque natoque. Non senectus netus arcu, et nisl mus justo felis eros venenatis. Duis orci sapien class integer tellus taciti integer nulla consectetur tortor varius. Diam justo habitasse at erat risus placerat tincidunt primis fringilla vitae donec. Auctor sodales viverra bibendum rutrum diam interdum tortor dictumst. Duis nibh nec massa lorem venenatis tempor aliquet nibh. Nibh mauris natoque iaculis massa nibh porttitor. Vehicula habitasse neque enim lacinia suscipit pulvinar? Augue sollicitudin, feugiat lectus. Neque inceptos sem mattis cum nibh eu etiam habitant mi ante curabitur auctor! Sapien suscipit aenean risus eleifend nullam integer, quisque auctor posuere amet tortor. At duis mollis sapien facilisi mi. Ultrices id curae; sem pellentesque quisque nulla eu sapien ipsum fermentum pulvinar viverra! Dui eget class elementum purus tellus habitant ridiculus luctus, adipiscing dui turpis lectus? Praesent aenean nunc quam eu sed aenean placerat. Nibh facilisis nunc aenean cras purus vulputate felis ullamcorper! Neque tempor pellentesque venenatis tempor ridiculus ornare velit nullam condimentum tellus nulla venenatis. Nisl tellus dis magna taciti facilisi sed dis dui! Metus augue taciti ultricies ante hendrerit arcu ante cursus morbi at diam. Vivamus mi lobortis semper varius mollis aptent. Cum metus urna rutrum vivamus dui mollis cursus habitant lorem suscipit rhoncus. Lacinia gravida luctus semper pellentesque primis facilisi venenatis lorem sociis. Senectus duis dapibus convallis aliquam lorem augue penatibus venenatis litora cursus dis justo. Neque viverra erat lectus hac a vestibulum sagittis habitant curabitur faucibus habitasse. Feugiat hac mi metus arcu laoreet at diam luctus! Fermentum vehicula a interdum lacinia amet blandit pretium suscipit eleifend at quam. Cubilia vulputate mollis ac. Sem dolor leo nulla. Varius montes tempus accumsan sem fringilla. Interdum eros phasellus lectus massa sed. Dictumst lacinia himenaeos pellentesque ipsum phasellus id lectus velit. Imperdiet, senectus ligula vel phasellus vel. Per neque non dignissim congue ligula commodo magna risus phasellus habitant facilisis. Senectus commodo risus, adipiscing donec? Luctus venenatis litora aenean congue auctor accumsan aenean vestibulum varius porttitor justo. Vehicula penatibus habitant iaculis vestibulum augue posuere dictum ipsum proin lacus. Blandit interdum placerat cras tristique primis sagittis. Praesent.</p>
+                    <span class="mt-1">
+                    <a href="#" target="_blank">Nec</a> tempus eget consectetur gravida leo felis inceptos hac magnis. Vel taciti sed venenatis ipsum venenatis cras. Aliquet quisque accumsan quisque integer nulla lectus nam? Eget penatibus curae; molestie vitae et id habitant tristique morbi! Porttitor dolor aenean, eros dis. Class nec inceptos venenatis lacinia aliquam praesent? Nunc porta consequat tortor lorem metus torquent hendrerit non praesent mollis nulla blandit. Eu sociis praesent facilisis. Adipiscing at consectetur dignissim aliquet phasellus tempus fusce a. Cubilia per malesuada odio quisque pellentesque. Platea, sagittis facilisi vel ad scelerisque cum facilisi tristique quam? Vivamus nullam, euismod interdum ultricies est eu facilisis. Natoque, varius sed sapien. Curae; nisl malesuada ultrices ante class magnis placerat. Torquent orci tristique taciti habitasse ac amet nunc magnis auctor himenaeos cum porta. Hac tempus quis integer. Magnis fames volutpat elit dictumst congue adipiscing dignissim suspendisse. Nisl aenean aenean condimentum viverra. Pharetra auctor tincidunt lectus nisl potenti conubia. Fames habitasse dui, fringilla sem convallis congue volutpat? Et cursus magna sed ultricies diam; scelerisque natoque. Non senectus netus arcu, et nisl mus justo felis eros venenatis. Duis orci sapien class integer tellus taciti integer nulla consectetur tortor varius. Diam justo habitasse at erat risus placerat tincidunt primis fringilla vitae donec. Auctor sodales viverra bibendum rutrum diam interdum tortor dictumst. Duis nibh nec massa lorem venenatis tempor aliquet nibh. Nibh mauris natoque iaculis massa nibh porttitor. Vehicula habitasse neque enim lacinia suscipit pulvinar? Augue sollicitudin, feugiat lectus. Neque inceptos sem mattis cum nibh eu etiam habitant mi ante curabitur auctor! Sapien suscipit aenean risus eleifend nullam integer, quisque auctor posuere amet tortor. At duis mollis sapien facilisi mi. Ultrices id curae; sem pellentesque quisque nulla eu sapien ipsum fermentum pulvinar viverra! Dui eget class elementum purus tellus habitant ridiculus luctus, adipiscing dui turpis lectus? Praesent aenean nunc quam eu sed aenean placerat. Nibh facilisis nunc aenean cras purus vulputate felis ullamcorper! Neque tempor pellentesque venenatis tempor ridiculus ornare velit nullam condimentum tellus nulla venenatis. Nisl tellus dis magna taciti facilisi sed dis dui! Metus augue taciti ultricies ante hendrerit arcu ante cursus morbi at diam. Vivamus mi lobortis semper varius mollis aptent. Cum metus urna rutrum vivamus dui mollis cursus habitant lorem suscipit rhoncus. Lacinia gravida luctus semper pellentesque primis facilisi venenatis lorem sociis. Senectus duis dapibus convallis aliquam lorem augue penatibus venenatis litora cursus dis justo. Neque viverra erat lectus hac a vestibulum sagittis habitant curabitur faucibus habitasse. Feugiat hac mi metus arcu laoreet at diam luctus! Fermentum vehicula a interdum lacinia amet blandit pretium suscipit eleifend at quam. Cubilia vulputate mollis ac. Sem dolor leo nulla. Varius montes tempus accumsan sem fringilla. Interdum eros phasellus lectus massa sed. Dictumst lacinia himenaeos pellentesque ipsum phasellus id lectus velit. Imperdiet, senectus ligula vel phasellus vel. Per neque non dignissim congue ligula commodo magna risus phasellus habitant facilisis. Senectus commodo risus, adipiscing donec? Luctus venenatis litora aenean congue auctor accumsan aenean vestibulum varius porttitor justo. Vehicula penatibus habitant iaculis vestibulum augue posuere dictum ipsum proin lacus. Blandit interdum placerat cras tristique primis sagittis. Praesent.
+                    </span>
+                    
                 </div>
             </div>
             <div id="contact" class="contact">
