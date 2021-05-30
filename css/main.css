@@ -5,7 +5,9 @@ html[current-theme='light'] {
     --background-color: rgb(218, 224, 230);
     --elevation-color: #fafafa;
 }
-
+i{
+    min-width: 32px;
+}
 html[current-theme='dark'] {
     --font-color: rgb(215, 218, 220);
     --background-color: rgb(0, 0, 0);

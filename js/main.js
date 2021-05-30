@@ -71,7 +71,7 @@ document.body.addEventListener('click', (event)=>{
 const clock = document.querySelector("#clock");
 setInterval(()=>{
     today = new Date(Date.now());
-    const time = `Time: ${localeTwoDigits(today.getHours())}:${localeTwoDigits(today.getMinutes())}:${localeTwoDigits(today.getSeconds())}`
+    const time = `<i class="far fa-clock"></i>${localeTwoDigits(today.getHours())}:${localeTwoDigits(today.getMinutes())}:${localeTwoDigits(today.getSeconds())}`
     clock.innerHTML = time;
 }, 200);
 
