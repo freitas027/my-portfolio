@@ -1,17 +1,14 @@
-const checkbox = document.querySelector("#checkbox");
 const contactBox = document.querySelector("#contact-box");
 const themeMsg = document.querySelector("#theme-msg")
+const body = document.querySelector("body");
+const themeToogle = document.querySelector("#theme-toogle");
+const contactClose = document.querySelector('#contact-close');
+const clock = document.querySelector("#clock");
+const btnMain = document.querySelector("#btn-main");
+const checkbox = document.querySelector("#checkbox");
 
-let theme = localStorage.getItem('current-theme');
-const setDarkTheme = () => {
-    document.documentElement.setAttribute("current-theme", "dark")
-    localStorage.setItem("current-theme", "dark");
-}
-const setLightTheme = () => {
-    document.documentElement.setAttribute("current-theme", "light");
-    localStorage.setItem("current-theme", "light");
-}
-
+// Theme switching using local storage
+// Variables declared on theme.js
 if (theme==='dark'){
     setDarkTheme();
     checkbox.checked = true;
@@ -21,10 +18,18 @@ if (theme==='dark'){
     checkbox.checked = false;
     themeMsg.innerHTML = "Night Mode Off";
 }
+themeToogle.addEventListener('click', ()=>{
+    if (checkbox.checked){
+        setDarkTheme();
+        themeMsg.innerHTML = "Night Mode On  ";
+    }else{
+        setLightTheme();
+        themeMsg.innerHTML = "Night Mode Off";
+    }
+});
 
+// Contact box manageging
 let showing = false;
-
-
 let animationDuration = getComputedStyle(contactBox).animationDuration.replace("s", "");
 animationDuration = (+animationDuration*1.2)*1000;
 console.log(animationDuration);
@@ -49,32 +54,33 @@ document.querySelector("#btn-contact").addEventListener('click', () =>{
         fadeOut();
     }
 });
-const body = document.querySelector("body");
-
-document.querySelector("#theme-toogle").addEventListener('click', ()=>{
-    if (checkbox.checked){
-        setDarkTheme();
-        themeMsg.innerHTML = "Night Mode On  ";
-    }else{
-        setLightTheme();
-        themeMsg.innerHTML = "Night Mode Off";
-    }
-});
 
 document.body.addEventListener('click', (event)=>{
+    if(contactBox.contains(event.target) || themeToogle.contains(event.target)){
+        return;
+    }
     if(event.target.id != "btn-contact" && event.target.id != "contact-box"){
         fadeOut();
         showing = false;
     }
 },true);
+contactClose.addEventListener('click', ()=> {
+    fadeOut();
+    showing = false;
+});
 
-const clock = document.querySelector("#clock");
+// Clock update
 setInterval(()=>{
     today = new Date(Date.now());
-    const time = `<i class="far fa-clock"></i>${localeTwoDigits(today.getHours())}:${localeTwoDigits(today.getMinutes())}:${localeTwoDigits(today.getSeconds())}`
+    const time = `${localeTwoDigits(today.getHours())}:${localeTwoDigits(today.getMinutes())}:${localeTwoDigits(today.getSeconds())}`
     clock.innerHTML = time;
-}, 200);
+}, 300);
 
+// Main page button reload
+btnMain.addEventListener('click', ()=>{
+    window.location.reload();
+});
+// Utility function
 function localeTwoDigits (number){
     return number.toLocaleString('en-US', {
         minimumIntegerDigits: 2,

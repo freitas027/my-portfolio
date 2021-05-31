@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
 <html>
     <head>
+        <title>My Portfolio</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/toogle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +9,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body class="theme">
+    <body>
+        <script type="text/javascript" src="js/theme.js"></script>
         <div class="container">
             <div class="left-sidebar m-1">
                 <nav>
                     <div class="flex-column">
-                        <a class="elevation-1 p-2 mb-1" href="#" onclick="window.location.reload()"> <i class="fas fa-home"></i> Main page</a>
-                        <a class="elevation-1 p-2 mb-1" href="#"><i class="fas fa-briefcase"></i> Work</a>
-                        <a class="elevation-1 p-2 mb-1" href="#"><i class="fas fa-map-marker-alt"></i> Off time</a>
-                        <a class="elevation-1 p-2 mb-1" id="btn-contact" href="#"><i class="fas fa-id-card"></i> Contact</a>
+                        <a class="elevation-1 p-1 mb-1" href="#" id="btn-main"> <i class="fas fa-home"></i> Main page</a>
+                        <a class="elevation-1 p-1 mb-1" href="#"><i class="fas fa-briefcase"></i> Work</a>
+                        <a class="elevation-1 p-1 mb-1" href="#"><i class="fas fa-map-marker-alt"></i> Off time</a>
+                        <a class="elevation-1 p-1 mb-1" id="btn-contact" href="#"><i class="fas fa-id-card"></i> Contact</a>
                     </div>
                     
                 </nav>
                 <div class="elevation-1">
-
-                    <div id="clock" class="p-2">
-                        Time
+                    <div class="flex-row p-2">
+                        <i class="far fa-clock"></i>
+                        <div id="clock" class="ml-2"></div>
                     </div>
                     <div class="flex-row p-2" >
                         <label class="toogle" id="theme-toogle">
@@ -36,32 +37,55 @@
                             Night Mode Off
                         </span>
                     </div>
-                    
                 </div>
             </div>
             <div class="content mt-1 mr-1">
                 <header>
                     <img class="header-img" src="https://cdn.pixabay.com/photo/2018/03/14/00/57/nature-3224129_960_720.jpg" alt="">
                 </header>
-                <div class="scroll-box elevation-1 mt-1" data-simplebar>
-
+                <div class="scroll-box elevation-1" data-simplebar>
+                    
                     <img class="profile-picture m-1" src="img/profile.jpg" alt="Professional profile picture">
                     <span class="mt-1">
-                    <a href="#" target="_blank">Nec</a> tempus eget consectetur gravida leo felis inceptos hac magnis. Vel taciti sed venenatis ipsum venenatis cras. Aliquet quisque accumsan quisque integer nulla lectus nam? Eget penatibus curae; molestie vitae et id habitant tristique morbi! Porttitor dolor aenean, eros dis. Class nec inceptos venenatis lacinia aliquam praesent? Nunc porta consequat tortor lorem metus torquent hendrerit non praesent mollis nulla blandit. Eu sociis praesent facilisis. Adipiscing at consectetur dignissim aliquet phasellus tempus fusce a. Cubilia per malesuada odio quisque pellentesque. Platea, sagittis facilisi vel ad scelerisque cum facilisi tristique quam? Vivamus nullam, euismod interdum ultricies est eu facilisis. Natoque, varius sed sapien. Curae; nisl malesuada ultrices ante class magnis placerat. Torquent orci tristique taciti habitasse ac amet nunc magnis auctor himenaeos cum porta. Hac tempus quis integer. Magnis fames volutpat elit dictumst congue adipiscing dignissim suspendisse. Nisl aenean aenean condimentum viverra. Pharetra auctor tincidunt lectus nisl potenti conubia. Fames habitasse dui, fringilla sem convallis congue volutpat? Et cursus magna sed ultricies diam; scelerisque natoque. Non senectus netus arcu, et nisl mus justo felis eros venenatis. Duis orci sapien class integer tellus taciti integer nulla consectetur tortor varius. Diam justo habitasse at erat risus placerat tincidunt primis fringilla vitae donec. Auctor sodales viverra bibendum rutrum diam interdum tortor dictumst. Duis nibh nec massa lorem venenatis tempor aliquet nibh. Nibh mauris natoque iaculis massa nibh porttitor. Vehicula habitasse neque enim lacinia suscipit pulvinar? Augue sollicitudin, feugiat lectus. Neque inceptos sem mattis cum nibh eu etiam habitant mi ante curabitur auctor! Sapien suscipit aenean risus eleifend nullam integer, quisque auctor posuere amet tortor. At duis mollis sapien facilisi mi. Ultrices id curae; sem pellentesque quisque nulla eu sapien ipsum fermentum pulvinar viverra! Dui eget class elementum purus tellus habitant ridiculus luctus, adipiscing dui turpis lectus? Praesent aenean nunc quam eu sed aenean placerat. Nibh facilisis nunc aenean cras purus vulputate felis ullamcorper! Neque tempor pellentesque venenatis tempor ridiculus ornare velit nullam condimentum tellus nulla venenatis. Nisl tellus dis magna taciti facilisi sed dis dui! Metus augue taciti ultricies ante hendrerit arcu ante cursus morbi at diam. Vivamus mi lobortis semper varius mollis aptent. Cum metus urna rutrum vivamus dui mollis cursus habitant lorem suscipit rhoncus. Lacinia gravida luctus semper pellentesque primis facilisi venenatis lorem sociis. Senectus duis dapibus convallis aliquam lorem augue penatibus venenatis litora cursus dis justo. Neque viverra erat lectus hac a vestibulum sagittis habitant curabitur faucibus habitasse. Feugiat hac mi metus arcu laoreet at diam luctus! Fermentum vehicula a interdum lacinia amet blandit pretium suscipit eleifend at quam. Cubilia vulputate mollis ac. Sem dolor leo nulla. Varius montes tempus accumsan sem fringilla. Interdum eros phasellus lectus massa sed. Dictumst lacinia himenaeos pellentesque ipsum phasellus id lectus velit. Imperdiet, senectus ligula vel phasellus vel. Per neque non dignissim congue ligula commodo magna risus phasellus habitant facilisis. Senectus commodo risus, adipiscing donec? Luctus venenatis litora aenean congue auctor accumsan aenean vestibulum varius porttitor justo. Vehicula penatibus habitant iaculis vestibulum augue posuere dictum ipsum proin lacus. Blandit interdum placerat cras tristique primis sagittis. Praesent.
+                        <p>Vitae inceptos, pretium urna neque. Fames, porttitor odio purus rutrum sed quisque blandit. Tincidunt eleifend laoreet ridiculus. Bibendum viverra commodo dictumst eleifend purus nisi aliquet. Quis sit fames ad ultricies sociis donec ridiculus lacus platea vulputate sagittis himenaeos. Sagittis et condimentum curabitur dictum. Viverra litora mollis sem neque vestibulum. Ante pharetra inceptos pulvinar volutpat, class dignissim imperdiet eleifend et ullamcorper consequat! Metus penatibus conubia, donec etiam sociis semper. Nulla lorem suscipit ullamcorper duis est cum dictum suscipit sociis. Erat laoreet orci ligula non facilisis. Orci porttitor semper orci cubilia at nam neque. Quisque leo vehicula euismod imperdiet habitasse primis platea inceptos vel facilisi. Nibh scelerisque fringilla ante cursus habitasse risus natoque sociis? Ullamcorper orci adipiscing primis nascetur amet vitae est habitant ipsum tempus. Facilisis nunc sed massa aliquam! Lacinia tellus ridiculus, maecenas euismod purus turpis. Aliquet commodo fusce feugiat arcu accumsan porttitor curae;. Neque nostra malesuada, convallis nisl praesent. Vivamus etiam curae; a ullamcorper. Malesuada quam per mus ipsum tellus senectus hendrerit. Augue id penatibus tellus sociosqu vehicula torquent adipiscing. Euismod urna sodales vitae malesuada? Vulputate non taciti curae;. Nostra, aliquet facilisis commodo vivamus class orci dolor aenean imperdiet? Scelerisque semper at euismod posuere penatibus posuere.</p>
+                        
+                        <p>Mollis scelerisque mollis vitae aptent mauris aptent. Commodo molestie massa cubilia senectus dictum sodales nunc tempus elementum risus ultrices. Erat sapien curabitur duis nam venenatis auctor tristique nec! Habitant cursus cras sed dolor bibendum. Ridiculus non dolor amet felis mus nisi iaculis! Euismod parturient neque sed aliquam morbi eros velit dictumst cursus tellus imperdiet mollis. Natoque rhoncus praesent dictum, ornare purus ut quis placerat. Mus magnis pulvinar hendrerit pellentesque tempor maecenas vehicula cursus torquent per ante habitasse. Varius porta laoreet ad interdum penatibus luctus habitasse dolor. Fringilla rhoncus elementum, habitant conubia. Conubia ornare magna tempus nam molestie? Tellus?</p>
+                        
+                        <p>Dis lectus amet sem vehicula felis sodales imperdiet arcu diam aliquam dignissim. Dictum fames elementum enim odio. Consectetur ligula, gravida ligula consequat accumsan metus morbi felis euismod eu dictum. Malesuada, hendrerit aenean viverra dolor. Nisl montes nibh class commodo lacus facilisi. Adipiscing quis euismod ultrices. At libero lobortis venenatis. Velit urna ornare purus vestibulum lobortis tortor. Rutrum nec inceptos torquent; magnis nullam dictumst congue dis a! Eros, nisi proin aliquam! Dis ridiculus ultrices luctus netus vestibulum odio platea venenatis. Pretium elit egestas morbi mollis fames neque nec vivamus interdum. Tempus tristique habitant curae; vivamus arcu facilisi nascetur etiam quisque iaculis. Tincidunt nisl, ut faucibus commodo rhoncus dis arcu magnis cum lectus! Etiam rhoncus aptent per himenaeos cursus pharetra adipiscing ullamcorper litora ullamcorper quis proin. Suspendisse ridiculus dignissim ultricies in sem sociosqu lorem. Porttitor tempor porttitor venenatis eget montes. Sem.</p>
+                        
+                        <p>Duis mus nisi varius facilisis et platea consectetur posuere aliquet semper ullamcorper. Nascetur elementum enim natoque curabitur in hendrerit massa erat aptent sociis ipsum sociosqu. Sollicitudin porta himenaeos, quis lacus. Ipsum, mi dictum inceptos vitae nam dapibus ac consequat gravida metus congue. Leo litora lobortis et varius sollicitudin nascetur sodales ridiculus aenean mi. Posuere magnis malesuada platea enim felis posuere taciti turpis scelerisque iaculis curabitur id. Ornare phasellus cum fames. Dui interdum purus penatibus. Phasellus congue lectus etiam malesuada facilisi ipsum volutpat torquent magna nulla mus. Fringilla platea porttitor convallis cras faucibus euismod hendrerit posuere. Dui mi tempor quam tristique sociis facilisis. Magna vitae praesent arcu. Non lorem parturient condimentum quam nibh malesuada? Auctor pharetra blandit, elementum etiam inceptos odio platea? Habitasse massa placerat nibh. Eros litora massa phasellus eu faucibus tortor euismod interdum aptent. Parturient aliquam id augue, vel proin curae; aenean mauris. Consectetur mauris leo vivamus. Ac pharetra!</p>
+                        
+                        <p>aucibus cursus quisque ac. Nam habitant habitasse aliquet est. Ac quam quis posuere sapien primis tortor dis sem eleifend diam praesent. Libero mattis quis varius eu amet netus quis morbi sed. Consectetur curae; hendrerit interdum integer vitae cras bibendum dignissim nulla. Imperdiet orci elementum interdum porttitor faucibus dapibus eu ridiculus nec ridiculus rutrum. Commodo dis faucibus nam lacus sollicitudin et.</p>
                     </span>
                     
                 </div>
             </div>
-            <div id="contact" class="contact">
-    
+            <div id="contact-box" class="contact-box hide fade-out">
+                <div class="contact-box-top p-2">
+                    <span> Contact Details</span>
+                    <button id="contact-close">X</button>
+                </div>
+                <div class="contact-box-content p-2">
+                    <div class="m-2">
+                        <i class="fas fa-envelope p-2"></i>youremail@mail.com
+                    </div>
+                    <div class="m-2">
+                        <i class="fas fa-phone p-2"></i>+00 00 0000-000
+                    </div>
+                    <div class="m-2 flex-row">
+                        <i class="fas fa-location-arrow p-2"></i>
+                         <span>
+                            Lorem ipsum dolor sit amet, consectetur<br>
+                            Vivamus lacinia enim
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-box-bottom">
+                </div>
+                <div class="flex-row flex-space-between">
+                </div>
             </div>
-        </div>
-
-        <div id="contact-box" class="contact-box hide fade-out">
-
-        </div>
-        
+        </div>   
     </body>
-
     <script type="text/javascript" src="js/main.js"></script>
 </html>
